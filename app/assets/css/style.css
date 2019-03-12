@@ -601,91 +601,117 @@ header.menu-active {
       display: block; }
 
 .main #video-logo {
-  background: #8A69FF;
-  min-height: 130vw;
+  background: #8570f6;
+  min-height: 150vh;
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 850px) {
     .main #video-logo {
-      min-height: 75vw; } }
+      min-height: 100vh; } }
   .main #video-logo video {
     display: block;
     position: absolute;
-    width: 250vw;
-    max-width: 250vw;
-    top: 2vw;
-    left: -75vw;
+    width: 350vw;
+    max-width: 350vw;
+    top: -15vw;
+    left: -125vw;
     right: 0;
     bottom: 0; }
     @media only screen and (min-width: 850px) {
       .main #video-logo video {
-        width: 140vw;
-        max-width: 140vw;
-        top: 2vw;
-        left: -20vw; } }
+        width: auto;
+        max-width: none;
+        height: calc( 130vh - 10vw - 32px);
+        margin-top: -2vh;
+        left: 50%;
+        top: 50%;
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
   @media only screen and (min-width: 850px) {
     .main #video-logo .border {
       position: absolute;
-      background: url("/assets/media/word-frame.png");
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      z-index: 9999;
       top: 5vw;
-      bottom: 5vw;
+      bottom: auto;
       right: 5vw;
-      left: 5vw; } }
+      left: 5vw;
+      overflow: hidden;
+      background: url("/assets/media/guide-to-masculinity-bg.png");
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      z-index: 9999;
+      height: 16px; }
+      .main #video-logo .border.left, .main #video-logo .border.right {
+        left: 5vw;
+        top: calc( 5vw + 16px);
+        bottom: calc( 5vw + 22px);
+        right: auto;
+        height: auto;
+        width: 16px;
+        background: url("/assets/media/guide-to-masculinity-bg-vertical.png");
+        background-size: 100% auto;
+        background-repeat: repeat; }
+        .main #video-logo .border.left.right, .main #video-logo .border.right.right {
+          right: 5vw;
+          left: auto; }
+      .main #video-logo .border.bottom {
+        top: auto;
+        bottom: 5vw; } }
 
 .main #newsletter-signup {
   margin: 20vw 10vw;
   text-align: center; }
   @media only screen and (min-width: 850px) {
     .main #newsletter-signup {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
       margin: 10vw; } }
   .main #newsletter-signup h1 {
     display: block;
     width: 100%;
+    margin: 0 auto 5vw;
     font-size: 12vw; }
     @media only screen and (min-width: 850px) {
       .main #newsletter-signup h1 {
-        font-size: 5vw; } }
-  .main #newsletter-signup #mc_embed_signup {
-    width: 100%; }
-    .main #newsletter-signup #mc_embed_signup #mc_embed_signup_scroll {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-    .main #newsletter-signup #mc_embed_signup label {
-      text-indent: -999%;
-      height: 0;
-      display: block; }
-    .main #newsletter-signup #mc_embed_signup input {
-      border: none;
-      border-radius: 0;
-      padding: 1vw 4vw 1vw;
-      height: 10vw;
-      outline: none; }
+        font-size: 5vw;
+        margin: 0; } }
+  .main #newsletter-signup #mc_embed_signup #mc_embed_signup_scroll {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .main #newsletter-signup #mc_embed_signup label {
+    text-indent: -999%;
+    height: 0;
+    display: block; }
+  .main #newsletter-signup #mc_embed_signup input {
+    border: none;
+    border-radius: 0;
+    padding: 1vw 4vw 1vw;
+    height: 10vw;
+    outline: none; }
+    @media only screen and (min-width: 850px) {
+      .main #newsletter-signup #mc_embed_signup input {
+        padding: .5vw 2vw .75vw;
+        height: 4vw; } }
+    .main #newsletter-signup #mc_embed_signup input[type=submit] {
+      background: #8570f6;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 4vw;
+      display: block;
+      line-height: 4vw;
+      padding: 0 2vw 0; }
       @media only screen and (min-width: 850px) {
-        .main #newsletter-signup #mc_embed_signup input {
-          padding: .5vw 2vw .75vw;
-          height: 4vw; } }
-      .main #newsletter-signup #mc_embed_signup input[type=submit] {
-        background: #8A69FF;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 4vw;
-        display: block;
-        line-height: 4vw;
-        padding: 0 2vw 0; }
-        @media only screen and (min-width: 850px) {
-          .main #newsletter-signup #mc_embed_signup input[type=submit] {
-            padding: 0 4vw 0;
-            font-size: 1vw; } }
+        .main #newsletter-signup #mc_embed_signup input[type=submit] {
+          padding: 0 4vw 0;
+          font-size: 1vw; } }
   .main #newsletter-signup .mc-field-group {
     display: inline; }
 
@@ -735,9 +761,9 @@ header.menu-active {
           font-size: 2vw;
           margin: 4vw 0 0; } }
     .main #recommended-reading ul a {
-      color: #8A69FF;
+      color: #8570f6;
       border-bottom: 1px solid transparent;
       transition: all 250ms ease-in; }
       .main #recommended-reading ul a:hover {
         color: #000;
-        border-bottom: 1px solid #8A69FF; }
+        border-bottom: 1px solid #8570f6; }
