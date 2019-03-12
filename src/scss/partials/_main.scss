@@ -22,7 +22,7 @@
       @media only screen and (min-width: $md-min-width) {
         width: auto;
         max-width: none;
-        height: calc( 130vh - 10vw - 32px );
+        height: calc( 130vh - 4vw - 32px );
         margin-top: -2vh;
         left: 50%;
         top: 50%;
@@ -32,10 +32,10 @@
     .border {
       @media only screen and (min-width: $md-min-width) {
         position: absolute;
-        top: 5vw;
+        top: 2vw;
         bottom: auto;
-        right: 5vw;
-        left: 5vw;
+        right: 2vw;
+        left: 2vw;
         overflow: hidden;
         background: url("/assets/media/guide-to-masculinity-bg.png");
         background-size: auto 100%;
@@ -44,9 +44,9 @@
         height: 16px;
 
         &.left, &.right {
-          left: 5vw;
-          top: calc( 5vw + 16px );
-          bottom: calc( 5vw + 22px );
+          left: 2vw;
+          top: calc( 2vw + 16px );
+          bottom: calc( 2vw + 22px );
           right: auto;
           height: auto;
           width: 16px;
@@ -55,14 +55,14 @@
           background-repeat:repeat;
 
           &.right {
-            right: 5vw;
+            right: 2vw;
             left: auto;
           }
         }
 
         &.bottom {
           top: auto;
-          bottom: 5vw;
+          bottom: 2vw;
         }
       }
     }
