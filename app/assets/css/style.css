@@ -602,7 +602,7 @@ header.menu-active {
 
 .main #video-logo {
   background: #8570f6;
-  min-height: 150vh;
+  min-height: 150vw;
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 850px) {
@@ -666,6 +666,8 @@ header.menu-active {
       display: flex;
       -ms-flex-align: center;
           align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       margin: 10vw; } }
   .main #newsletter-signup h1 {
     display: block;
@@ -675,7 +677,8 @@ header.menu-active {
     @media only screen and (min-width: 850px) {
       .main #newsletter-signup h1 {
         font-size: 5vw;
-        margin: 0; } }
+        margin: 0;
+        width: auto; } }
   .main #newsletter-signup #mc_embed_signup #mc_embed_signup_scroll {
     display: -ms-flexbox;
     display: flex;
@@ -692,13 +695,22 @@ header.menu-active {
   .main #newsletter-signup #mc_embed_signup input {
     border: none;
     border-radius: 0;
-    padding: 1vw 4vw 1vw;
+    padding: 1vw 3vw 1vw;
     height: 10vw;
-    outline: none; }
+    min-width: 20vw;
+    outline: none;
+    color: #8570f6; }
+    .main #newsletter-signup #mc_embed_signup input:-ms-input-placeholder {
+      color: #000;
+      opacity: 1; }
+    .main #newsletter-signup #mc_embed_signup input::placeholder {
+      color: #000;
+      opacity: 1; }
     @media only screen and (min-width: 850px) {
       .main #newsletter-signup #mc_embed_signup input {
         padding: .5vw 2vw .75vw;
-        height: 4vw; } }
+        height: 4vw;
+        min-width: none; } }
     .main #newsletter-signup #mc_embed_signup input[type=submit] {
       background: #8570f6;
       color: #fff;
@@ -707,7 +719,8 @@ header.menu-active {
       font-size: 4vw;
       display: block;
       line-height: 4vw;
-      padding: 0 2vw 0; }
+      padding: 0 2vw 0;
+      min-width: none; }
       @media only screen and (min-width: 850px) {
         .main #newsletter-signup #mc_embed_signup input[type=submit] {
           padding: 0 4vw 0;
