@@ -1,0 +1,182 @@
+.main {
+  #video-logo {
+    background: #8A69FF;
+    min-height: 130vw;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: $md-min-width) {
+      min-height: 75vw;
+    }
+
+    video {
+      display: block;
+      position: absolute;
+      width: 250vw;
+      max-width: 250vw;
+      top: 2vw;
+      left: -75vw;
+      right: 0;
+      bottom: 0;
+
+      @media only screen and (min-width: $md-min-width) {
+        width: 140vw;
+        max-width: 140vw;
+        top: 2vw;
+        left: -20vw;
+      }
+    }
+    .border {
+      @media only screen and (min-width: $md-min-width) {
+        position: absolute;
+        background: url("/assets/media/word-frame.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        z-index: 9999;
+        top: 5vw;
+        bottom: 5vw;
+        right: 5vw;
+        left: 5vw;
+      }
+    }
+  }
+
+  #newsletter-signup {
+    margin: 20vw 10vw;
+    text-align: center;
+
+    @media only screen and (min-width: $md-min-width) {
+      margin: 10vw;
+    }
+
+    h1 {
+      display: block;
+      width: 100%;
+      font-size: 12vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 5vw;
+      }
+    }
+
+    #mc_embed_signup {
+      width: 100%;
+
+      #mc_embed_signup_scroll {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      label {
+        text-indent: -999%;
+        height: 0;
+        display: block;
+      }
+
+      input {
+        border: none;
+        border-radius: 0;
+        padding: 1vw 4vw 1vw;
+        height: 10vw;
+        outline: none;
+
+        @media only screen and (min-width: $md-min-width) {
+          padding: .5vw 2vw .75vw;
+          height: 4vw;
+        }
+
+        &[type=submit] {
+          background: #8A69FF;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 4vw;
+          display: block;
+          line-height: 4vw;
+          padding: 0 2vw 0;
+
+          @media only screen and (min-width: $md-min-width) {
+            padding: 0 4vw 0;
+            font-size: 1vw;
+          }
+        }
+      }
+    }
+    .mc-field-group {
+      display: inline;
+    }
+  }
+
+  #recommended-reading {
+    background: #fff;
+    color: #1d1d1c;
+    padding: 20vw 10vw;
+    min-height: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media only screen and (min-width: $md-min-width) {
+      padding: 10vw;
+    }
+
+    .col {
+      &.left {
+        width: 0;
+        display: none;
+
+        @media only screen and (min-width: $md-min-width) {
+          width: 25%;
+          display: block;
+        }
+      }
+      &.right {
+        width: 100%;
+
+        @media only screen and (min-width: $md-min-width) {
+          width: 65%;
+        }
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 4vw;
+      margin-top: 0;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.2vw;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 5vw;
+        font-weight: 200;
+        margin: 10vw 0 0;
+
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 2vw;
+          margin: 4vw 0 0;
+        }
+      }
+
+      a {
+        color: #8A69FF;
+        border-bottom: 1px solid transparent;
+        transition: all 250ms ease-in;
+
+        &:hover {
+          color: #000;
+          border-bottom: 1px solid #8A69FF;
+        }
+      }
+    }
+  }
+}
