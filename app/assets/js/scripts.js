@@ -1,10 +1,10 @@
 /*!
- * hehim
- * hehim.guide
- * https://github.com/LamaSix/hehim
+ * maxkirchoff
+ * Max Kirchoff
+ * 
  * @author Max Kirchoff
  * @version 1.0.0
- * Copyright 2019. MIT licensed.
+ * Copyright 2020. MIT licensed.
  */
 (function ($, window, document, undefined) {
 
