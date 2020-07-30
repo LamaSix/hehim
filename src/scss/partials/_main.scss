@@ -68,6 +68,22 @@
     }
   }
 
+  #mission-statement {
+    padding: 20vw 10vw;
+    text-align: center;
+    @media only screen and (min-width: $md-min-width) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10vw;
+    }
+
+    h1 {
+      font-size: 6vw;
+    }
+
+  }
+
   #newsletter-signup {
     margin: 20vw 10vw;
     text-align: center;

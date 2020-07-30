@@ -657,6 +657,21 @@ header.menu-active {
         top: auto;
         bottom: 2vw; } }
 
+.main #mission-statement {
+  padding: 20vw 10vw;
+  text-align: center; }
+  @media only screen and (min-width: 850px) {
+    .main #mission-statement {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 10vw; } }
+  .main #mission-statement h1 {
+    font-size: 6vw; }
+
 .main #newsletter-signup {
   margin: 20vw 10vw;
   text-align: center; }
